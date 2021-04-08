@@ -29,12 +29,23 @@
     }).addTo(mymap);
 </script>
 <script>
-    var cities=[{"type":"Feature", "properties":{"name":"Eagan, MN", "show_on_map":true, "popupContent":"Eagan, MN"}, "geometry":{"type":"Point", "coordinates":[-93.166885 ,44.804131]}},
-        {"type":"Feature", "properties":{"name":"", "show_on_map":true, "popupContent":""}, "geometry":{"type":"Point", "coordinates":[-93.122166178, 44.736997052]}},
+    var cities=[
+        {"type":"Feature", "properties":{"name":"Apple Valley, MN", "show_on_map":true, "popupContent":"Apple Valley, MN"}, "geometry":{"type":"Point", "coordinates":[-93.2177, 44.7319]}},
+        {"type":"Feature", "properties":{"name":"Andover, MN", "show_on_map":true, "popupContent":"Andover, MN"}, "geometry":{"type":"Point", "coordinates":[-93.288165514, 45.2333324]}},
+        {"type":"Feature", "properties":{"name":"Aitkin, MN", "show_on_map":true, "popupContent":"Aitkin, MN"}, "geometry":{"type":"Point", "coordinates":[-93.41, 46.61]}},
+        {"type":"Feature", "properties":{"name":"Duluth, MN", "show_on_map":true, "popupContent":"Duluth, MN"}, "geometry":{"type":"Point", "coordinates":[-92.098195, 46.786938]}},
+        {"type":"Feature", "properties":{"name":"Big Falls, MN", "show_on_map":true, "popupContent":"Big Falls, MN"}, "geometry":{"type":"Point", "coordinates":[-93.806569, 48.191063]}},
+        {"type":"Feature", "properties":{"name":"Bemidji, MN", "show_on_map":true, "popupContent":"Bemidji, MN"}, "geometry":{"type":"Point", "coordinates":[-94.888229, 47.481018]}},
+        {"type":"Feature", "properties":{"name":"Crookston, MN", "show_on_map":true, "popupContent":"Crookston, MN"}, "geometry":{"type":"Point", "coordinates":[-96.604830914, 47.771163582]}},
+        {"type":"Feature", "properties":{"name":"Detroit Lakes, MN", "show_on_map":true, "popupContent":"Detroit Lakes, MN"}, "geometry":{"type":"Point", "coordinates":[-95.848160, 46.827316]}},
+        {"type":"Feature", "properties":{"name":"Morris, MN", "show_on_map":true, "popupContent":"Morris, MN"}, "geometry":{"type":"Point", "coordinates":[-95.9083297, 45.58499766]}},
+        {"type":"Feature", "properties":{"name":"Worthington, MN", "show_on_map":true, "popupContent":"Worthington, MN"}, "geometry":{"type":"Point", "coordinates":[-95.591164302, 43.618664192]}},
+        {"type":"Feature", "properties":{"name":"New Ulm, MN", "show_on_map":true, "popupContent":"New Ulm, MN"}, "geometry":{"type":"Point", "coordinates":[-94.459302, 44.314439]}},
+        {"type":"Feature", "properties":{"name":"Red Wing, MN", "show_on_map":true, "popupContent":"Red Wing, MN"}, "geometry":{"type":"Point", "coordinates":[-92.5338, 44.56247]}}
     ];
 
     function circleConvert(feature, latlng){
-        return new L.CircleMarker(latlng, {radius: 5, color: '#ff953a'})
+        return new L.CircleMarker(latlng, {radius: 10, color: '#ff953a'})
     }
     function onEachFeature(feature, layer) {
         if (feature.properties && feature.properties.popupContent) {
