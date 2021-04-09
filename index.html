@@ -77,10 +77,18 @@
         [46.786938, -92.098195],[44.314439, -94.459302],[47.771163582, -96.604830914],[46.61, -93.41],[44.7319, -93.2177]];
 
     var line={
-        "weight": 3,
-        "color": "#795aff"
+        "weight": 5,
+        "color": "#ffffff"
+    }
+    var lineDot={
+        "dashArray": [
+            10, 20
+        ],
+        "weight": 5,
+        "color": "#000000"
     }
     L.polyline(path, line).addTo(mymap);
+    L.polyline(path, lineDot).addTo(mymap);
 </script>
 </body>
 </html>
