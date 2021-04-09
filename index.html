@@ -13,11 +13,23 @@
             crossorigin=""></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .name{
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-<h1 style="font-family: 'Bebas Neue', cursive">Leaflet working with Mapbox</h1>
-<h3 style="font-family: 'Bebas Neue', cursive">- Robert Beane</h3>
-<div id="mymapid" style="height:1000px"></div>
+<div class="name">
+    <h1 style="font-family: 'Bebas Neue', cursive">Leaflet working with Mapbox</h1>
+    <h3 style="font-family: 'Bebas Neue', cursive">- Robert Beane</h3>
+</div>
+
+<div id="mymapid" style="height:90%"></div>
 <script>
     var mymap = L.map('mymapid').setView([44.7319, -93.2177], 12)
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
